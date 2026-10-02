@@ -1,0 +1,14 @@
+{
+  "name": "nodejs-classification",
+  "version": "1.0.0",
+  "description": "Scrape and classify reviews using Playwright, Axios, and OpenRouter Jev model",
+  "main": "scrape_reviews.js",
+  "scripts": {
+    "start": "node scrape_reviews.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "playwright": "^1.50.0"
+  }
+}
