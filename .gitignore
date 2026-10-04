@@ -1,16 +1,34 @@
 # Environment variables
 .env
-.env*.local
+.env.*
+!.env.example
 
 # Dependencies
 node_modules/
 
-# Scraped and classified output files
+# Scraped and classified data output files
 reviews.json
 classified.json
 
+# Playwright artifacts
+test-results/
+playwright-report/
+blob-report/
+playwright/.cache/
+
 # Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-*.log
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo

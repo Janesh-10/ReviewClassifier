@@ -14,13 +14,14 @@ Automated tool to scrape customer reviews using Playwright and classify review s
 ### 1. Install Dependencies
 
 ```bash
+cd Backend
 npm install
 npx playwright install chromium
 ```
 
 ### 2. Configure Environment Variables
 
-Create a `.env` file in the root directory:
+Create a `.env` file in the `Backend` directory:
 
 ```env
 OPENROUTER_API_KEY=your_openrouter_api_key_here
@@ -30,15 +31,16 @@ OPENROUTER_API_KEY=your_openrouter_api_key_here
 
 ## How to Run
 
-To run both scraping and classification:
+Start the Express API server:
 
 ```bash
+cd Backend
 npm start
 ```
 
-*(or run `node scrape_reviews.js` directly)*
+*(or run `node server.js` from within the `Backend` directory)*
 
-### Output Files
+### API Endpoints
 
-- `reviews.json` — Scraped reviews with generated IDs.
-- `classified.json` — Reviews with predicted sentiment classifications and summary counts logged to the console.
+- `GET /reviews`: Scrapes all reviews from Circuit Market and returns them directly as JSON.
+- `POST /classified`: Accepts JSON `{ "id": 1, "review": "text" }` (or an array) and returns `{ "id": 1, "review": "text", "classification": "Good|Bad|Neutral|Mixed" }`.
