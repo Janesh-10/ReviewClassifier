@@ -1,0 +1,194 @@
+/* Container & Layout */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #2d3748;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.app-header h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #1a202c;
+}
+
+.app-header p {
+  color: #718096;
+  font-size: 15px;
+  margin: 0;
+}
+
+/* Controls & Buttons */
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s, transform 0.1s;
+}
+
+.btn:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+
+.btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background-color: #3182ce;
+  color: #ffffff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #2b6cb0;
+}
+
+.btn-success {
+  background-color: #38a169;
+  color: #ffffff;
+}
+
+.btn-success:hover:not(:disabled) {
+  background-color: #2f855a;
+}
+
+/* Alerts */
+.alert {
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.alert-info {
+  background-color: #ebf8ff;
+  color: #2b6cb0;
+  border: 1px solid #bee3f8;
+}
+
+.alert-danger {
+  background-color: #fff5f5;
+  color: #c53030;
+  border: 1px solid #fed7d7;
+}
+
+/* Table Styles */
+.table-responsive {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e2e8f0;
+}
+
+.reviews-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.reviews-table th {
+  background-color: #f7fafc;
+  padding: 14px 16px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #4a5568;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.reviews-table td {
+  padding: 12px 16px;
+  font-size: 14px;
+  border-bottom: 1px solid #edf2f7;
+  vertical-align: middle;
+}
+
+.reviews-table tr:hover {
+  background-color: #f8fafc;
+}
+
+.review-id {
+  font-weight: 600;
+  color: #718096;
+}
+
+.review-text {
+  line-height: 1.5;
+  color: #2d3748;
+}
+
+.review-classification {
+  text-align: center;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px !important;
+  color: #a0aec0;
+  font-size: 15px;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge-good {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.badge-bad {
+  background-color: #fed7d7;
+  color: #742a2a;
+}
+
+.badge-neutral {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.badge-mixed {
+  background-color: #feebc8;
+  color: #744210;
+}
+
+.badge-error {
+  background-color: #fed7d7;
+  color: #9b2c2c;
+}
+
+.badge-pending {
+  background-color: #edf2f7;
+  color: #a0aec0;
+  font-style: italic;
+}
