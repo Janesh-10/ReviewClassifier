@@ -1,0 +1,19 @@
+{
+  "name": "nextjs-classification",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Next.js 16 App to scrape customer reviews using Playwright and classify sentiment using OpenRouter AI",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "next": "^16.3.8",
+    "playwright": "^1.50.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
